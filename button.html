@@ -1,0 +1,31 @@
+<html>
+
+<head>
+
+</head>
+
+ <body>
+
+
+       <button id="btn1">Button 1</button>
+       <button id="btn2">Button 2</button>
+
+    <script>
+        
+          var btn1=document.getElementById("btn1");
+          var btn2=document.getElementById("btn2");
+          btn1.addEventListener('click',f1);
+           function f1(){
+               alert("button 1 event")
+           }
+
+           btn2.onclick=function(){
+               btn1.removeEventListener('click',f1);
+           }
+             
+    </script>
+
+ </body>
+
+</html>
+
